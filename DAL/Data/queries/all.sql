@@ -36,17 +36,7 @@ CREATE  TABLE [dbo].[ Appointments] (
     FOREIGN KEY (TherapistID) REFERENCES Therapists(TherapistID) -- קשר לטבלת רופאים
 );
 
-CREATE  TABLE [dbo].[ MedicalRecords] (
-    RecordID INT PRIMARY KEY IDENTITY(1,1), -- מזהה תיק רפואי, PRIMARY KEY
-    PatientID INT NOT NULL, -- מזהה מטופל, FOREIGN KEY
-    TherapistID INT NOT NULL, -- מזהה רופא, FOREIGN KEY
-    RecordDate DATE NOT NULL, -- תאריך הרישום
-    Diagnosis TEXT NOT NULL, -- אבחנה
-    Treatment TEXT NOT NULL, -- טיפול
-    Notes TEXT, -- הערות
-    FOREIGN KEY (PatientID) REFERENCES Patients(PatientID), -- קשר לטבלת מטופלים
-    FOREIGN KEY (TherapistID) REFERENCES Therapists(TherapistID) -- קשר לטבלת רופאים
-);
+c
 
 CREATE  TABLE [dbo].[ Invoices] (
     InvoiceID INT PRIMARY KEY IDENTITY(1,1), -- מזהה חשבונית, PRIMARY KEY
