@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\אוטמזגין\\Desktop\\server\\fullstack project\\Final_Project\\Web_api\\Web_api.csproj": {}
+    "C:\\Users\\אוטמזגין\\Desktop\\server\\Final_Project\\Web_api\\Web_api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\אוטמזגין\\Desktop\\server\\fullstack project\\Final_Project\\Web_api\\Web_api.csproj": {
+    "C:\\Users\\אוטמזגין\\Desktop\\server\\Final_Project\\Web_api\\Web_api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\אוטמזגין\\Desktop\\server\\fullstack project\\Final_Project\\Web_api\\Web_api.csproj",
+        "projectUniqueName": "C:\\Users\\אוטמזגין\\Desktop\\server\\Final_Project\\Web_api\\Web_api.csproj",
         "projectName": "Web_api",
-        "projectPath": "C:\\Users\\אוטמזגין\\Desktop\\server\\fullstack project\\Final_Project\\Web_api\\Web_api.csproj",
+        "projectPath": "C:\\Users\\אוטמזגין\\Desktop\\server\\Final_Project\\Web_api\\Web_api.csproj",
         "packagesPath": "C:\\Users\\אוטמזגין\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\אוטמזגין\\Desktop\\server\\fullstack project\\Final_Project\\Web_api\\obj\\",
+        "outputPath": "C:\\Users\\אוטמזגין\\Desktop\\server\\Final_Project\\Web_api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
