@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\אוטמזגין\\Desktop\\server\\Final_Project\\Web_api\\Web_api.csproj": {}
+    "H:\\FinalProj\\Final_Project\\Web_api\\Web_api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\אוטמזגין\\Desktop\\server\\Final_Project\\Web_api\\Web_api.csproj": {
+    "H:\\FinalProj\\Final_Project\\Web_api\\Web_api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\אוטמזגין\\Desktop\\server\\Final_Project\\Web_api\\Web_api.csproj",
+        "projectUniqueName": "H:\\FinalProj\\Final_Project\\Web_api\\Web_api.csproj",
         "projectName": "Web_api",
-        "projectPath": "C:\\Users\\אוטמזגין\\Desktop\\server\\Final_Project\\Web_api\\Web_api.csproj",
-        "packagesPath": "C:\\Users\\אוטמזגין\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\אוטמזגין\\Desktop\\server\\Final_Project\\Web_api\\obj\\",
+        "projectPath": "H:\\FinalProj\\Final_Project\\Web_api\\Web_api.csproj",
+        "packagesPath": "C:\\Users\\סמן טוב רבקה\\.nuget\\packages\\",
+        "outputPath": "H:\\FinalProj\\Final_Project\\Web_api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\אוטמזגין\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\סמן טוב רבקה\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -49,6 +50,26 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
@@ -73,7 +94,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
