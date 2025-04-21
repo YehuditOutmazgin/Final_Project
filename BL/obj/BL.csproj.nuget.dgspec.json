@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "H:\\project\\Final_Project\\BL\\BL.csproj": {}
+    "H:\\c#\\project\\Final_Project\\BL\\BL.csproj": {}
   },
   "projects": {
-    "H:\\project\\Final_Project\\BL\\BL.csproj": {
+    "H:\\c#\\project\\Final_Project\\BL\\BL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\project\\Final_Project\\BL\\BL.csproj",
+        "projectUniqueName": "H:\\c#\\project\\Final_Project\\BL\\BL.csproj",
         "projectName": "BL",
-        "projectPath": "H:\\project\\Final_Project\\BL\\BL.csproj",
-        "packagesPath": "C:\\Users\\ירוסלבסקי אסתר תמר\\.nuget\\packages\\",
-        "outputPath": "H:\\project\\Final_Project\\BL\\obj\\",
+        "projectPath": "H:\\c#\\project\\Final_Project\\BL\\BL.csproj",
+        "packagesPath": "C:\\Users\\סמן טוב רבקה\\.nuget\\packages\\",
+        "outputPath": "H:\\c#\\project\\Final_Project\\BL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ירוסלבסקי אסתר תמר\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\סמן טוב רבקה\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
