@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DAL.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +9,14 @@ namespace DAL.Api
 {
     internal interface ITherapistRepo
     {
+        Task<Therapist> GetTherapistById(int id);
+
+        Task AddTherapist(Therapist therapist);
+
+        Task UpdateTherapist(Therapist therapist);
+
+        Task DeleteTherapist(int id);
+        //
+        Task<List<Therapist>> GetAllTherapists();
     }
 }
