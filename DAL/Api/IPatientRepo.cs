@@ -9,11 +9,11 @@ namespace DAL.Api
 {
     internal interface IPatientRepo
     {
-        //Task<List<Patient>> GetAllPatientsAsync();
-        Task<Patient> GetPatientByIdAsync(int id);
-        Task AddPatientAsync(Patient patient);
-        Task UpdatePatientAsync(Patient patient);
-        //Task DeletePatientAsync(int id);
-        Task<List<Appointment>> GetPatientAppointmentsAsync(int patientId);
+        Task<List<Patient>> GetAllPatient();
+        Task<Patient> GetPatientById(int id);
+        Task AddPatient(Patient patient);
+        Task UpdatePatient(Patient patient);
+        Task DeletePatient(int id);
+        Task<List<Appointment>> GetPatientAppointments(int patientId);
     }
 }

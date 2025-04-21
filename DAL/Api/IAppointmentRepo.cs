@@ -9,7 +9,8 @@ namespace DAL.Api
 {
     internal interface IAppointmentRepo
     {
-        Task<List<Appointment>> GetAllAppointments();
+        // its so big we dont need all of it, why you did it?
+        //Task<List<Appointment>> GetAllAppointments();
         Task<List<Appointment>> GetAppointmentsByPatientId(int patientId);
 
         //Task<Appointment> GetAppointmentById(int id);
