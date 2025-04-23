@@ -17,6 +17,10 @@ public partial class DB_Manager : DbContext
 
     public virtual DbSet<Appointment> Appointments { get; set; }
 
+    public virtual DbSet<AppointmentsPassed> AppointmentsPasseds { get; set; }
+
+    public virtual DbSet<AvailableAppointment> AvailableAppointments { get; set; }
+
     public virtual DbSet<BankAccount> BankAccounts { get; set; }
 
     public virtual DbSet<Hmo> Hmos { get; set; }
@@ -33,7 +37,7 @@ public partial class DB_Manager : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=H:\\FinalProj\\Final_Project\\DAL\\Data\\DB.mdf;Integrated Security=True;Connect Timeout=30");
+        => optionsBuilder.UseSqlServer("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=H:\\c#\\project\\Final_Project\\DAL\\Data\\DB.mdf;Integrated Security=True");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -57,6 +61,45 @@ public partial class DB_Manager : DbContext
                 .HasForeignKey(d => d.TherapistId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK__Appointme__Thera__5AB9788F");
+        });
+
+        modelBuilder.Entity<AppointmentsPassed>(entity =>
+        {
+            entity.HasKey(e => e.AppointmentId).HasName("PK__Appointm__8ECDFCA2022F9A32");
+
+            entity.ToTable("AppointmentsPassed");
+
+            entity.Property(e => e.AppointmentId).HasColumnName("AppointmentID");
+            entity.Property(e => e.PatientId).HasColumnName("PatientID");
+            entity.Property(e => e.Status)
+                .HasMaxLength(50)
+                .IsUnicode(false);
+            entity.Property(e => e.TherapistId).HasColumnName("TherapistID");
+
+            entity.HasOne(d => d.Patient).WithMany(p => p.AppointmentsPasseds)
+                .HasForeignKey(d => d.PatientId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK__Appointme__Patie__7849DB76");
+
+            entity.HasOne(d => d.Therapist).WithMany(p => p.AppointmentsPasseds)
+                .HasForeignKey(d => d.TherapistId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK__Appointme__Thera__793DFFAF");
+        });
+
+        modelBuilder.Entity<AvailableAppointment>(entity =>
+        {
+            entity.HasKey(e => e.AppointmentId).HasName("PK__ Availab__8ECDFCA22FD333AC");
+
+            entity.ToTable(" AvailableAppointments ");
+
+            entity.Property(e => e.AppointmentId).HasColumnName("AppointmentID");
+            entity.Property(e => e.TherapistId).HasColumnName("TherapistID");
+
+            entity.HasOne(d => d.Therapist).WithMany(p => p.AvailableAppointments)
+                .HasForeignKey(d => d.TherapistId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_ AvailableAppointments _ToTable");
         });
 
         modelBuilder.Entity<BankAccount>(entity =>

@@ -14,5 +14,4 @@ public partial class Hmo
     public string? Address { get; set; }
 
     public virtual ICollection<Patient> Patients { get; set; } = new List<Patient>();
-    //I made a change at this file
 }

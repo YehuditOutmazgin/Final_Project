@@ -21,6 +21,8 @@ public partial class Patient
 
     public virtual ICollection<Appointment> Appointments { get; set; } = new List<Appointment>();
 
+    public virtual ICollection<AppointmentsPassed> AppointmentsPasseds { get; set; } = new List<AppointmentsPassed>();
+
     public virtual Hmo Hmo { get; set; } = null!;
 
     public virtual ICollection<Invoice> Invoices { get; set; } = new List<Invoice>();
