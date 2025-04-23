@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace DAL.Models;
 
-public partial class Appointment
+public partial class AppointmentsPassed
 {
     public int AppointmentId { get; set; }
 
